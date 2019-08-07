@@ -17,11 +17,11 @@ namespace HealthOnline.DevTest.CurrencyProviderApi.Controllers
         {
             return new CurrencyModel[]
             {
-                new CurrencyModel {IsoName = "EUR", CurrencyName = "Euro", CurrencyRate = RandomNumberBetween(1.10327, 1.17025)},
-                new CurrencyModel {IsoName = "GBP", CurrencyName = "British Pound", CurrencyRate = RandomNumberBetween(0.85452, 0.90639)},
-                new CurrencyModel {IsoName = "USD", CurrencyName = "United States Dollar", CurrencyRate = RandomNumberBetween(1.24926, 1.33172)},
-                new CurrencyModel {IsoName = "JPY", CurrencyName = "Japanese Yen", CurrencyRate = RandomNumberBetween(134.485, 148.176)},
-                new CurrencyModel {IsoName = "INR", CurrencyName = "Indian Rupee", CurrencyRate = RandomNumberBetween(87.7147, 148.176)}
+                new CurrencyModel {Iso = "EUR", Name = "Euro", Rate = RandomNumberBetween(1.10327, 1.17025)},
+                new CurrencyModel {Iso = "GBP", Name = "British Pound", Rate = RandomNumberBetween(0.85452, 0.90639)},
+                new CurrencyModel {Iso = "USD", Name = "United States Dollar", Rate = RandomNumberBetween(1.24926, 1.33172)},
+                new CurrencyModel {Iso = "JPY", Name = "Japanese Yen", Rate = RandomNumberBetween(134.485, 148.176)},
+                new CurrencyModel {Iso = "INR", Name = "Indian Rupee", Rate = RandomNumberBetween(87.7147, 148.176)}
             };
         }
 

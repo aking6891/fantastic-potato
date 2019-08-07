@@ -1,8 +1,12 @@
 ﻿using Entities.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
-namespace HealthOnline.DevTest.AnotherCurrencyProviderApi.Models
+namespace WebApplication.Models
 {
-    public class ExchangeModel : IRateModel
+    public class RateModel : IRateModel
     {
         public string Iso { get; set; }
         public string Name { get; set; }

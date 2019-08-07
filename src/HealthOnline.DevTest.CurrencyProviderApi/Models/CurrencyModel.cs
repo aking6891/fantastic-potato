@@ -1,9 +1,11 @@
-﻿namespace HealthOnline.DevTest.CurrencyProviderApi.Models
+﻿using Entities.Models;
+
+namespace HealthOnline.DevTest.CurrencyProviderApi.Models
 {
-    public class CurrencyModel
+    public class CurrencyModel : IRateModel
     {
-        public string IsoName { get; set; }
-        public string CurrencyName { get; set; }
-        public double CurrencyRate { get; set; }
+        public string Iso { get; set; }
+        public string Name { get; set; }
+        public double Rate { get; set; }
     }
 }

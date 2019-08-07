@@ -1,0 +1,51 @@
+﻿@model WebApplication.Models.IndexViewModel
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginRouteForm("Default", new { Action = "Index", Controller = "Rates" }, FormMethod.Get))
+{
+    <p>
+        <div>
+            @Html.DropDownListFor(model => model.ApiId, new SelectList(Model.ApiDropdown, "Value", "Text", Model.ApiId), new { @id = "listApiId" })
+            <button type="submit" id="submitButton">Display Results</button>
+        </div>
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.Label("IsoName")
+            </th>
+            <th>
+                @Html.Label("CurrencyName")
+            </th>
+            <th>
+                @Html.Label("CurrencyRate")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Rates)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Iso)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rate)
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+}
+

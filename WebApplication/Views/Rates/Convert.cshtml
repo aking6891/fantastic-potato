@@ -1,0 +1,62 @@
+﻿@model WebApplication.Models.ConvertModel
+
+@{
+    ViewBag.Title = "Convert";
+}
+
+<h2>Convert</h2>
+
+@using (Html.BeginRouteForm("Default", new { Action = "Convert", Controller = "Rates" }, FormMethod.Get))
+{
+    <p>
+        <div>
+            @Html.DropDownListFor(model => model.ApiId, new SelectList(Model.ApiDropdown, "Value", "Text", Model.ApiId), new { @id = "listApiId" })
+        </div>
+    </p>
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Input, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Input, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Input, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Convert From", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.RateFromId, new SelectList(Model.RatesFromDropdown, "Value", "Text", Model.RateFromId), new { @id = "listRateFromId" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Convert To", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.RatesToId, new SelectList(Model.RatesToDropdown, "Value", "Text", Model.RatesToId), new { @id = "listRateToId" })
+            </div>
+        </div>
+        <div>
+
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Output, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Output, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Convert" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

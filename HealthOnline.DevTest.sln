@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthOnline.DevTest.CurrencyProviderApi", "src\HealthOnline.DevTest.CurrencyProviderApi\HealthOnline.DevTest.CurrencyProviderApi.csproj", "{6D203F7A-0A3B-4FB4-A377-6612BDE6E267}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{08FE1948-0016-432A-9DA6-169A1F37CC65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthOnline.DevTest.AnotherCurrencyProviderApi", "src\HealthOnline.DevTest.AnotherCurrencyProviderApi\HealthOnline.DevTest.AnotherCurrencyProviderApi.csproj", "{70B8C365-5A76-475B-926D-19DAFD0AA967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthOnline.DevTest.AnotherCurrencyProviderApi", "src\HealthOnline.DevTest.AnotherCurrencyProviderApi\HealthOnline.DevTest.AnotherCurrencyProviderApi.csproj", "{70B8C365-5A76-475B-926D-19DAFD0AA967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{64A5DE66-A85D-45D1-AC61-567B74CD7AF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{EA8639CB-1BAD-4CFE-8564-4FB884EBE16D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,14 @@ Global
 		{70B8C365-5A76-475B-926D-19DAFD0AA967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70B8C365-5A76-475B-926D-19DAFD0AA967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70B8C365-5A76-475B-926D-19DAFD0AA967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A5DE66-A85D-45D1-AC61-567B74CD7AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A5DE66-A85D-45D1-AC61-567B74CD7AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A5DE66-A85D-45D1-AC61-567B74CD7AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A5DE66-A85D-45D1-AC61-567B74CD7AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8639CB-1BAD-4CFE-8564-4FB884EBE16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8639CB-1BAD-4CFE-8564-4FB884EBE16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8639CB-1BAD-4CFE-8564-4FB884EBE16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8639CB-1BAD-4CFE-8564-4FB884EBE16D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +42,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6D203F7A-0A3B-4FB4-A377-6612BDE6E267} = {08FE1948-0016-432A-9DA6-169A1F37CC65}
 		{70B8C365-5A76-475B-926D-19DAFD0AA967} = {08FE1948-0016-432A-9DA6-169A1F37CC65}
+		{64A5DE66-A85D-45D1-AC61-567B74CD7AF1} = {08FE1948-0016-432A-9DA6-169A1F37CC65}
+		{EA8639CB-1BAD-4CFE-8564-4FB884EBE16D} = {08FE1948-0016-432A-9DA6-169A1F37CC65}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {329A656A-1E84-4323-A4DF-A4071D5B75DE}
